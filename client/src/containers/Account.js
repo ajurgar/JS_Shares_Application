@@ -1,10 +1,48 @@
 import React from "react";
+import './Account.css';
+import ReactAudioPlayer from 'react-audio-player';
+import { ReactDOM } from "react";
+
+const mp3 = require( "./herecomemoney.mp3")
 
 const Account = () => {
 
     return (
+        <div className="">
+        <div className="loader">
+
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+
         <div className="account">
             <section className="details">
+ 
                 <h2>
                     Personal Details
                 </h2>
@@ -20,6 +58,11 @@ const Account = () => {
                 <p>Bank Name: Starling</p>
                 <p>Bank Account Number: 23-41-**-** <button> Change Account Number </button></p>
                 <p>Sort-Code: 80-75-60<button> Change Sort-Code </button></p>
+               <p><ReactAudioPlayer
+  src={mp3}
+  autoplay={false}
+  controls
+/></p>
             </section>
             <section className="details">
                 <h2>Subscription</h2>
@@ -28,6 +71,8 @@ const Account = () => {
                 <p>Post <input type="checkbox" /></p>
                 <p><button> Unsubscribe</button></p>
             </section>
+        </div>
+        </div>
         </div>
     )
 }
