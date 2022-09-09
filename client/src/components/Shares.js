@@ -33,8 +33,7 @@ const Shares = ({ share, removeShare, updateInput }) => {
         xAxis: {
             categories:
                 [
-                    '12 Weeks Ago', '11 Weeks Ago', '10 Weeks Ago', '9 Weeks Ago', '8 Weeks Ago',
-                    '7 Weeks Ago', '6 Weeks Ago', '5 Weeks Ago', '4 Weeks Ago', '3 Weeks Ago', '2 Weeks Ago', '1 Week Ago', 'Current']
+                    '12 Weeks Ago', '11 Weeks Ago', '10 Weeks Ago', '9 Weeks Ago', '8 Weeks Ago', '7 Weeks Ago', '6 Weeks Ago', '5 Weeks Ago', '4 Weeks Ago', '3 Weeks Ago', '2 Weeks Ago', '1 Week Ago', 'Current']
         },
         series: [{
             data: [
@@ -93,7 +92,7 @@ const Shares = ({ share, removeShare, updateInput }) => {
                     <p className="nameofshare"><b>{share.shareName}</b>  </p>
                     <p><b>Amount:</b> {share.heldAmount}</p>
                     <input placeholder="Edit Amount Purchased" onChange={handleChange} name="heldAmount"></input>
-                    <p><b>Purchase Price:</b> {share.sharePurchasePrice}</p>
+                    <p><b>Purchase Price:</b> {share.sharePurchasePrice}$</p>
                     <input placeholder="Edit Purchase Price" onChange={handleChange} name="sharePurchasePrice"></input>
                     <p><b>Current Price: </b> {share.currentPrice}$</p>
                     <p ><b>24h/Change: </b><span className={percentage > 0 ? "positiveNumber" : percentage < 0 ? "negativeNumber" : ""}>{percentage}%</span></p>
